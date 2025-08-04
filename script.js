@@ -92,3 +92,15 @@ console.log(studentNew.courses);
 console.log(`Course totals: ${studentNew.totalCourses()}`);
 
 
+
+// Bonus Task
+
+
+function findSum(...nums) {
+    return nums.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+};
+
+let total = findSum(...score);
+let avg = total / score.length;
+
+console.log(avg);
