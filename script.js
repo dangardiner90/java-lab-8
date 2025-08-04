@@ -21,3 +21,16 @@ console.log(student.name);
 console.log(student.age);
 console.log(student.info());
 
+// Part 2: Working with JSON
+
+// Converting the student object into a JSON string
+let studentString = JSON.stringify(student);
+console.log(studentString);
+
+// Converting it back into a JavaScript object
+let newStudent = JSON.parse(studentString);
+console.log(newStudent);
+
+
+
+
