@@ -31,6 +31,23 @@ console.log(studentString);
 let newStudent = JSON.parse(studentString);
 console.log(newStudent);
 
+// Part 3: Using destructuring assignment
+
+// Destructuring the name and course properties from the student object
+let { name, age, enrolled, courses } = student;
+console.log(name);
+console.log(courses);
+
+// Creating an array of scores
+let score = [90, 91, 92, 93, 94, 95];
+// Destructuring the first 2 scores and logging them:
+[first, second] = score;
+console.log(first, second);
+
+
+
+
+
 
 
 
