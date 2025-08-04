@@ -21,6 +21,8 @@ console.log(student.name);
 console.log(student.age);
 console.log(student.info());
 
+
+
 // Part 2: Working with JSON
 
 // Converting the student object into a JSON string
@@ -30,6 +32,8 @@ console.log(studentString);
 // Converting it back into a JavaScript object
 let newStudent = JSON.parse(studentString);
 console.log(newStudent);
+
+
 
 // Part 3: Using destructuring assignment
 
@@ -46,8 +50,15 @@ console.log(first, second);
 
 
 
+// Part 4: The spread operator
 
+// Cloning the student object using the spread operator and adding a new property
+let studentCopy = { ...student, graduationYear: 2027 };
+console.log(studentCopy);
 
-
-
+// Creating a new array
+let newCourses = ['Advanced Frontend', 'Database Programming', 'Object Programming'];
+// Combining the destructured courses property from student with the newCourses array and logging it
+let combinedCourses = { courses, ...newCourses};
+console.log(combinedCourses);
 
